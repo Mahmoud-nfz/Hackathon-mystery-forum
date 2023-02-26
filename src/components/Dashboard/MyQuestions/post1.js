@@ -3,6 +3,7 @@ import { BiUpvote, BiDownvote } from "react-icons/bi";
 import { GoArrowUp, GoArrowDown } from "react-icons/go";
 
 import { BsFillChatLeftFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 
@@ -12,7 +13,7 @@ const Post1 = () => {
  const [active, isActive] = useState(false);
  const [like, setLike] = useState(false);
  const [dislike, setDislike] = useState(false);
- const [likeCount, setLikeCount] = useState(0);
+ const [likeCount, setLikeCount] = useState(23);
  const [dislikeCount, setDislikeCount] = useState(0);
  const [animation, setAnimation] = useState(false);
  const [animation2, setAnimation2] = useState(false);
@@ -21,7 +22,7 @@ const Post1 = () => {
 
  const handlePostClick = (postId) => {
   setActivePostId(postId);
-  setTimeout(() => setActivePostId(null), 200);
+//   setTimeout(() => setActivePostId(null), 200);
  };
 
  const toggleLike = (e) => {
@@ -53,11 +54,14 @@ const Post1 = () => {
   }
  };
  return (
+    <Link to="/post">
      <div
          key={2}
          onClick={() => handlePostClick(2)}
-         className={` 
-          ${activePostId === 2 ? "border-2 border-blue-500" : ""
+         onMouseEnter={() => setActivePostId(2)}
+         onMouseLeave={() => setActivePostId(null)}
+         className={` cursor-pointer
+          ${activePostId === 2 ? "border-4 border-red-500" : ""
          } ml-[19px] mt-[20px] h-fit w-[93%] relative shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-xl p-2`}
      >
 
@@ -76,13 +80,11 @@ const Post1 = () => {
           Activism
          </button>
          <button className="bg-gray-200 hover:bg-gray-300 text-bg-gray-400 hover:text-gray-600 rounded-md px-2 font-sans mx-2">
-          Journailsm
+          Journalism
          </button>
         </div>
         <div className="h-fit w-[70%] text-base text-[#777777] p-2">
-         The world's oldest and first cryptocurrency was founded in 2008 by
-         an anonymous group of people or developers who were widely referred
-         to.........
+            A mysterious case involving a journalist and a lawyer has been placed on the minds of all people in Tunisia.
         </div>
         <div className="mt-4 h-fit   relative">
          <div className="bg-green-400 h-12 w-12 rounded-full  mt-1 mx-2 inline-block"></div>
@@ -180,6 +182,7 @@ const Post1 = () => {
        </div>
       </div>
      </div>
+    </Link>
  );
 };
 

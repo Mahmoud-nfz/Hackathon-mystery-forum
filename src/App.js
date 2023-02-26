@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Signup from "./pages/signup";
 import Home from './pages/home';
+import Post from './pages/post';
 import Community from './pages/community';
 import Profile from './pages/profile';
 import Heropage from './pages/heropage';
@@ -20,6 +21,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route exact path='/post' element={<Post />} />
       </Routes>
     </BrowserRouter>
   </>
