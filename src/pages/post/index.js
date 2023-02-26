@@ -63,10 +63,19 @@ function Post() {
    };
 
    const [pageContent, setPageContent] = useState(<>
-    <span className="text-5xl">M</span>assdaasdasddsa  rd hdr hdrth dtrh rddr ttrdh d rdthtrd tr hrtd htr  drhtdhg drhtdhg ghjgfjsa
-    dsasdadsadsdasbh hj gtrrtyy uiyu ytu tytyuhg gjgf gfvn ngffg dghdgh dfgfd nvbc nv vnc fhghj fjhg 
-    hgfcgfng uyur truy yu hhjvk g hlj
-    dasdsaasdsadsadds
+    <span className="text-5xl">I</span>n a shocking turn of events, five journalists have mysteriously disappeared just days before the start of a highly anticipated trial case. The journalists, who were known for their investigative reporting, were expected to cover the trial of a high-profile businessman accused of embezzlement.
+
+According to sources close to the journalists, they were last seen on Monday evening, leaving their office in a hurry. Their families and colleagues became worried when they failed to show up for work the next day and could not be reached on their phones.
+
+The police were immediately notified, and an extensive search was launched to locate the missing journalists. However, despite their best efforts, there has been no sign of the journalists since their disappearance.
+
+The only clue that the journalists left behind was a <a className="text-blue-500" href="http://localhost:5173"> mysterious website </a>, which appeared on the internet shortly after their disappearance. The website, which has a black background with white text, contains only a single message: "The truth will be revealed."
+
+Many have speculated that the website may hold the key to the journalists' disappearance and that it may be linked to the trial case they were supposed to cover. However, the authorities have not commented on the website and have asked the public not to jump to conclusions.
+
+The disappearance of these five journalists has sent shockwaves through the journalism community, and many have expressed their concern and fear for the safety of journalists who risk their lives to bring the truth to the public.
+
+The investigation into the disappearance of the journalists is ongoing, and the police have asked anyone with information to come forward. As of now, the trial case is set to begin as scheduled, but the absence of the journalists has raised questions about the transparency of the trial and the safety of those who cover it.
     </>);
 
     const [bitcoin, setBitcoin] = useState("");
@@ -83,7 +92,7 @@ function Post() {
         </>);
         setBitcoin(<Bounce left className="align-right">
 
-        <img src={require('../../assets/test.jpg')} className="mt-4 m-4 rounded-2xl h-[calc(17vw-32px)]  w-[calc(17vw-32px)]"></img>
+        <img src={require('../../assets/test.webp')} className="mt-4 m-4 rounded-2xl h-[calc(17vw-32px)]  w-[calc(17vw-32px)]"></img>
         
         </Bounce>);
     }
@@ -129,7 +138,9 @@ function Post() {
          </button>
         </div>
         <div className="h-fit w-[130%] text-base text-[#777777] p-2">
-            A mysterious case involving a journalist and a lawyer has been placed on the minds of all people in Tunisia.
+            <span className="text-lg font-bold">
+                A mysterious case involving a journalist and a lawyer has been placed on the minds of all people in Tunisia.
+            </span>
             <br />
             {pageContent}
         </div>
