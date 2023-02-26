@@ -4,6 +4,7 @@ import Posts from "../../components/homeSection/Posts";
 import RightSideBar from "../../components/homeSection/RightSideBar";
 import Modal from "../../components/Modal/Modal";
 import AlertComp from "../../components/Alert";
+import Bounce from 'react-reveal/Bounce';
 
 import { BiUpvote, BiDownvote } from "react-icons/bi";
 import { GoArrowUp, GoArrowDown } from "react-icons/go";
@@ -67,6 +68,9 @@ function Post() {
     hgfcgfng uyur truy yu hhjvk g hlj
     dasdsaasdsadsadds
     </>);
+
+    const [bitcoin, setBitcoin] = useState("");
+    
    
    document.cookie = `view_hidden=false;max-age=604800;domain=localhost`
 
@@ -77,6 +81,11 @@ function Post() {
         hgfcgfng uyur truy yu hhjvk g hlj
         dasdsaasdsadsadds
         </>);
+        setBitcoin(<Bounce left className="align-right">
+
+        <img src={require('../../assets/test.jpg')} className="mt-4 m-4 rounded-2xl h-[calc(17vw-32px)]  w-[calc(17vw-32px)]"></img>
+        
+        </Bounce>);
     }
     }, 1000);
 
@@ -222,6 +231,11 @@ function Post() {
      </div>
         </div>
         <RightSideBar />
+        
+        <div className="top-[460px] max-md:hidden max-xl:right-0 max-xl:w-[30vw] r w-[25vw] h-[calc(80vh+120px)] absolute right-[8vw] p-[15px]  no-scrollbar overflow-y-scroll">
+            {bitcoin}
+        </div>
+
         {modalOpen && <Modal setOpenModal={setModalOpen} setSuccess={setSuccess} mask="false" /> }
       </div>
     </>
