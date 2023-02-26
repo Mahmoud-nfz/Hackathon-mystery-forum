@@ -69,7 +69,7 @@ According to sources close to the journalists, they were last seen on Monday eve
 
 The police were immediately notified, and an extensive search was launched to locate the missing journalists. However, despite their best efforts, there has been no sign of the journalists since their disappearance.
 
-The only clue that the journalists left behind was a <a className="text-blue-500" href="http://localhost:5173"> mysterious website </a>, which appeared on the internet shortly after their disappearance. The website, which has a black background with white text, contains only a single message: "The truth will be revealed."
+The only clue that the journalists left behind was a <a className="text-blue-500" href="https://mysterious-blog.vercel.app/"> mysterious website </a>, which appeared on the internet shortly after their disappearance. The website, which has a black background with white text, contains only a single message: "The truth will be revealed."
 
 Many have speculated that the website may hold the key to the journalists' disappearance and that it may be linked to the trial case they were supposed to cover. However, the authorities have not commented on the website and have asked the public not to jump to conclusions.
 
